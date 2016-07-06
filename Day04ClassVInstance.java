@@ -2,36 +2,65 @@
 
 Link: https://www.hackerrank.com/challenges/30-class-vs-instance?h_r=next-challenge&h_v=zen
 
-Objective
-In this challenge, we're going to learn about the difference between a class and an instance; because this is an Object Oriented concept, it's only enabled in certain languages. Check out the Tutorial tab for learning materials and an instructional video!
+Objective:
+In this challenge, we're going to learn about the difference between a class and an instance;
+because this is an Object Oriented concept, it's only enabled in certain languages.
+Check out the Tutorial tab for learning materials and an instructional video!
 
-Task
-Write a Person class with an instance variable, , and a constructor that takes an integer, , as a parameter. The constructor must assign  to  after confirming the argument passed as  is not negative; if a negative argument is passed as , the constructor should set  to  and print . In addition, you must write the following instance methods:
+Task:
+Write a Person class with an instance variable, age, and a constructor that takes an integer, initialAge, as a parameter.
+The constructor must assign  to  after confirming the argument passed as  is not negative;
+if a negative argument is passed as initialAge, the constructor should set age to 0
+and print "Age is not valid, setting age to 0."
 
-yearPasses() should increases the  instance variable by .
-amIOld() should perform the following conditional actions:
-If , print
-If  and , print
-Otherwise, print
-To help you learn by example and complete this challenge, much of the code is provided for you, but you'll be writing everything in the future. The code that creates each instance of your Person class is in the main method. Don't worry if you don't understand it all quite yet!
+In addition, you must write the following instance methods:
+    yearPasses() should increases the age instance variable by 1.
+    amIOld() should perform the following conditional actions:
+        If age < 13, print "You are young"
+        If age >= 13 and age < 18, print "You are a teenager."
+        Otherwise, print "You are old."
+
+To help you learn by example and complete this challenge, much of the code is provided for you,
+but you'll be writing everything in the future. The code that creates each instance of your Person class is in
+the main method. Don't worry if you don't understand it all quite yet!
 
 Note: Do not remove or alter the stub code in the editor.
 
-Input Format
-
+Input Format:
 Input is handled for you by the stub code in the editor.
 
-The first line contains an integer,  (the number of test cases), and the  subsequent lines each contain an integer denoting the  of a Person instance.
+The first line contains an integer, T (the number of test cases), and the T subsequent lines each
+contain an integer denoting the age of a Person instance.
 
-Constraints
+Constraints:
+1 <= T <= 4
+-5 <= age <= 30
 
-Output Format
+Output Format:
+Complete the method definitions provided in the editor so they meet the specifications outlined above;
+the code to test your work is already in the editor. If your methods are implemented correctly,
+each test case will print 2 or 3 lines (depending on whether or not a valid initialAge was passed to the constructor).
 
-Complete the method definitions provided in the editor so they meet the specifications outlined above; the code to test your work is already in the editor. If your methods are implemented correctly, each test case will print  or lines (depending on whether or not a valid  was passed to the constructor).
  */
 
 public class Day04ClassVInstance {
 
+    public class Person {
 
+        private int age;
 
-}
+        public Person (int initialAge) {
+            //TODO add some more code to run some checks on initialAge
+        } // end Person
+
+        public void amIOld() {
+            //TODO write code determining if this person's age is old and print the correct statement
+        } // end amIOld
+
+        public void yearPasses() {
+            //Increment this person's age.
+        } // end yearPasses
+
+    } // end Person
+
+} // end Day04
