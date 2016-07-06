@@ -40,6 +40,7 @@ public class Day00HelloWorld {
 
         // Write the second line of output
         System.out.println(inputString);
+
     } // end main
 
 } // end Day00
