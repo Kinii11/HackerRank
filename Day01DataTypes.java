@@ -71,4 +71,5 @@ public class Day01DataTypes {
         System.out.println(s);
 
     } // end main
+
 } // end Day01
