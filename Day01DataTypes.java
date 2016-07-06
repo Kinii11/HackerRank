@@ -70,11 +70,5 @@ public class Day01DataTypes {
         s = s + newString;
         System.out.println(s);
 
-        /// Comment
-
-        System.out.println("Hello");
-        //TODO finish this code.
-
-        // TODO added another todo
     } // end main
 } // end Day01
