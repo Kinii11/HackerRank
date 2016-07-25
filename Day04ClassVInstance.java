@@ -16,7 +16,7 @@ and print "Age is not valid, setting age to 0."
 In addition, you must write the following instance methods:
     yearPasses() should increases the age instance variable by 1.
     amIOld() should perform the following conditional actions:
-        If age < 13, print "You are young"
+        If age < 13, print "You are young."
         If age >= 13 and age < 18, print "You are a teenager."
         Otherwise, print "You are old."
 
@@ -50,15 +50,27 @@ public class Day04ClassVInstance {
         private int age;
 
         public Person (int initialAge) {
-            //TODO add some more code to run some checks on initialAge
+            if (initialAge < 0) {
+                age = 0;
+                System.out.println("Age is not valid, setting age to 0.");
+            } // end if
+
         } // end Person
 
         public void amIOld() {
-            //TODO write code determining if this person's age is old and print the correct statement
+            if (age < 13) {
+                System.out.println("You are young.");
+            } // end if
+            else if (age >= 13 && age < 18) {
+                System.out.println("You are a teenager.");
+            } // end else if
+            else {
+                System.out.println("You are old.");
+            }
         } // end amIOld
 
         public void yearPasses() {
-            //Increment this person's age.
+            age = age++;
         } // end yearPasses
 
     } // end Person
