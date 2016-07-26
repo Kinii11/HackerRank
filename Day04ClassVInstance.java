@@ -43,9 +43,11 @@ each test case will print 2 or 3 lines (depending on whether or not a valid init
 
  */
 
+import java.util.Scanner;
+
 public class Day04ClassVInstance {
 
-    public class Person {
+    public static class Person {
 
         private int age;
 
@@ -54,6 +56,9 @@ public class Day04ClassVInstance {
                 age = 0;
                 System.out.println("Age is not valid, setting age to 0.");
             } // end if
+            else {
+                age = initialAge;
+            } // end else
 
         } // end Person
 
@@ -70,9 +75,25 @@ public class Day04ClassVInstance {
         } // end amIOld
 
         public void yearPasses() {
-            age = age++;
+            age = age + 1;
         } // end yearPasses
-
     } // end Person
 
+    public static void main (String[] args) {
+        int T = 4; // Number of Iterations
+        int[] inputs = {-1, 10, 16,18};
+
+        for (int i = 0; i < T; i++) {
+            int age = inputs[i];
+            Person p= new Person(age);
+            p.amIOld();
+
+            for (int j = 0; j < 3; j++) {
+                p.yearPasses();
+            } // end for
+
+            p.amIOld();
+            System.out.println();
+        } // end for
+    } // end main
 } // end Day04
