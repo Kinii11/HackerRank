@@ -17,7 +17,7 @@ Constraints:
 2 <= N <= 20
 
 Output Format:
-Print 10 lines of output; each line i (where 1 <= i <= 10) contains the restulf of N x i in the form:
+Print 10 lines of output; each line i (where 1 <= i <= 10) contains the result of N x i in the form:
 N x i = result.
 
  */
@@ -30,6 +30,18 @@ public class Day05Loops {
     public class Solution {
     } // end Solution
     public static void main(String[] args) {
-        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        System.out.println("Enter an Integer: ");
+
+        Scanner keyboard = new Scanner(System.in);
+        int n = keyboard.nextInt();
+        keyboard.close();
+
+        int counter = 1;
+
+        while (counter <= 10) {
+            System.out.println(n + " x " + counter + " = " + (n*counter));
+            counter++;
+        } // end while
+
     } // end main
 } // end Day05Loops
