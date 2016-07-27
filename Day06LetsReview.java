@@ -35,8 +35,40 @@ Output Format
 For each String Sj (where 0 <= j <= T-1), print Sj's even-indexed characters, followed by a space,
 followed by Sj's odd-indexed characters.
 
+Note: The name of the class must be Solution when submitted
  */
+
+import java.util.Scanner;
 
 public class Day06LetsReview {
 
-}
+    public class Solution {
+        // Must be named Solution when submitted
+    } // end Solution
+
+    public static void main (String[] args) {
+
+        Scanner keyboard = new Scanner(System.in);
+        System.out.println("How many test cases: ");
+        int testCases = keyboard.nextInt();
+
+        String[] testCasesEven = new String[testCases];
+        String[] testCasesOdd = new String [testCases];
+
+        for (int counter = 0; counter < testCases; counter++) {
+            String output = keyboard.nextLine();
+
+            for(int counter2 = 0; counter2 < output.length(); counter2++) {
+
+                if (counter%2== 0) {
+                    testCasesEven[counter]= testCasesEven[counter] + output[counter2]; //TODO Use String.ToCharArray
+                } // end if
+
+            } // end for
+
+        } // end for
+
+        keyboard.close();
+
+    } // end main
+} // end Day06LetsReview
