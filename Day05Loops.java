@@ -22,7 +22,6 @@ N x i = result.
 
  */
 
-import java.io.*;
 import java.util.*;
 
 public class Day05Loops {
