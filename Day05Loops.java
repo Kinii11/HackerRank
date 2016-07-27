@@ -21,6 +21,7 @@ Print 10 lines of output; each line i (where 1 <= i <= 10) contains the restulf 
 N x i = result.
 
  */
+
 import java.io.*;
 import java.util.*;
 
