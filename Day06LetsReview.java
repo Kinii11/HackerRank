@@ -49,22 +49,24 @@ public class Day06LetsReview {
     public static void main (String[] args) {
 
         Scanner keyboard = new Scanner(System.in);
-        System.out.println("How many test cases: ");
+//        System.out.println("How many test cases: "); // Needed to comment out for submission
         int testCases = keyboard.nextInt();
 
-        String[] testCasesEven = new String[testCases];
-        String[] testCasesOdd = new String [testCases];
 
         for (int counter = 0; counter < testCases; counter++) {
-            String output = keyboard.nextLine();
+            char[] output = keyboard.next().toCharArray();
 
-            for(int counter2 = 0; counter2 < output.length(); counter2++) {
-
-                if (counter%2== 0) {
-                    testCasesEven[counter]= testCasesEven[counter] + output[counter2]; //TODO Use String.ToCharArray
+            String odd = "", even = "";
+            for (int counter2 = 0; counter2 < output.length; counter2++) {
+                if (counter2%2 == 0) {
+                    even = even + output[counter2];
                 } // end if
-
+                else {
+                    odd = odd + output[counter2];
+                } // end else
             } // end for
+
+            System.out.println(even + " " + odd);
 
         } // end for
 
