@@ -51,9 +51,26 @@ harry=12299933
  */
 
 
+import java.util.HashMap;
+import java.util.Scanner;
+
 public class Day08DictionariesAndMapping {
 
     public class Solution {
         // Must be named Solution for submission
     } // end Solution
+
+    public static void main (String[] args) {
+
+        HashMap<String, String> phoneBook = new HashMap<>();
+
+        Scanner keyboard = new Scanner(System.in);
+
+        // System.out.println("How many contacts to add: ");
+        int numberOfContacts = keyboard.nextInt();
+
+        for (int counter = 0, counter < numberOfContacts, counter++) {
+            //TODO finish this loop;
+        } // end for
+    } // end main
 } // end Day08DictionariesAndMapping
