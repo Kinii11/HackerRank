@@ -67,10 +67,35 @@ public class Day08DictionariesAndMapping {
         Scanner keyboard = new Scanner(System.in);
 
         // System.out.println("How many contacts to add: ");
-        int numberOfContacts = keyboard.nextInt();
+        int numberOfContacts = 0;
+        try {
+            numberOfContacts = keyboard.nextInt();
+        } catch (Exception e) {
+            System.out.println("You must insert the number of line to add first.");
+            e.printStackTrace();
+        } // end try/catch
 
-        for (int counter = 0, counter < numberOfContacts, counter++) {
-            //TODO finish this loop;
+        for(int counter = 0; counter < numberOfContacts; counter++) {
+            phoneBook.put(keyboard.next(), keyboard.next());
         } // end for
+
+        String name = "", phoneNumber = "";
+        // System.out.println("Input \"0\" to exit loop");
+        while (!name.equals("0")) {
+            name = keyboard.next();
+            phoneNumber = phoneBook.get(name);
+
+            if (phoneNumber != null) {
+                System.out.println(name + "=" + phoneNumber);
+            } // end if
+            else {
+                if (!name.equals("0")) {
+                    System.out.println("Not found");
+                } // end if
+            } // end else
+        } // end while
+
+        keyboard.close();
+
     } // end main
 } // end Day08DictionariesAndMapping
