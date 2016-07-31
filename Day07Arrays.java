@@ -34,7 +34,7 @@ import java.util.Scanner;
 public class Day07Arrays {
 
     public class Solution {
-        // Must be named Solution for submission
+        // Must be named Solution for submission.
     } // end Solution
 
     public static void main(String[] args) {

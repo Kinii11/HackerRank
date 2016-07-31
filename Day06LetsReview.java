@@ -43,7 +43,7 @@ import java.util.Scanner;
 public class Day06LetsReview {
 
     public class Solution {
-        // Must be named Solution when submitted
+        // Must be named Solution when submitted.
     } // end Solution
 
     public static void main (String[] args) {

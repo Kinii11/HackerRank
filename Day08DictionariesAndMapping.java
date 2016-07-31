@@ -49,5 +49,11 @@ Not found
 harry=12299933
 
  */
+
+
 public class Day08DictionariesAndMapping {
-}
+
+    public class Solution {
+        // Must be named Solution for submission
+    } // end Solution
+} // end Day08DictionariesAndMapping

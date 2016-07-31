@@ -27,7 +27,7 @@ import java.util.*;
 public class Day05Loops {
 
     public class Solution {
-        // This is the name the class was required to have when submitted.
+        // Must be named Solution for submission.
     } // end Solution
     public static void main(String[] args) {
         System.out.println("Enter an Integer: ");
