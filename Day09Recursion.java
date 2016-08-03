@@ -27,7 +27,7 @@ Print a single integer denoting N!.
 
 import java.util.Scanner;
 
-public class Day09Recursion {
+public class Day09Recursion { // Should be name Solution for submission
 
     private int total = 1;
 
@@ -48,7 +48,7 @@ public class Day09Recursion {
         int input = keyboard.nextInt();
         keyboard.close();
 
-        Day09Recursion test = new Day09Recursion();
+        Day09Recursion test = new Day09Recursion(); // Change this line to Solution test = new Solution(); for submit
         System.out.println(test.factorial(input));
 
     } // end main
