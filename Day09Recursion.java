@@ -25,11 +25,32 @@ Print a single integer denoting N!.
 
  */
 
+import java.util.Scanner;
+
 public class Day09Recursion {
 
-    public class Factorial {} // end Factorial
+    private int total = 1;
+
+    private int factorial(int n) {
+
+        if (n ==1) {
+            return total;
+        } // end if
+        else {
+            total = n * total;
+            return factorial(n - 1);
+        } // end else
+
+    } //  end factorial
 
     public static void main (String[] args) {
+        Scanner keyboard = new Scanner(System.in);
+        int input = keyboard.nextInt();
+        keyboard.close();
+
+        Day09Recursion test = new Day09Recursion();
+        System.out.println(test.factorial(input));
 
     } // end main
+
 } // end Day09Recursion
