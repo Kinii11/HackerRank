@@ -35,21 +35,27 @@ public class Day10BinaryNumbers {
         keyboard.close();
 
         // Convert to Binary
-        String binaryNumberString = Integer.toBinaryString(inputNumber).toString();
+        String binaryNumberString = Integer.toBinaryString(inputNumber);
+        // System.out.println(binaryNumberString); //This line outputs Binary Representation of Integer
 
         // Calculate Maximum number of ones in a row
         int maxNumberOfOnes = 0, currentNumber = 0;
         for (int i = 0; i < binaryNumberString.length(); i++) {
+            String currentLetter = Character.toString(binaryNumberString.charAt(i));
 
-            if (binaryNumberString.equals("1")) {
+            if (currentLetter.equals("1")) {
                 currentNumber++;
             } // end if
+            else {
+                currentNumber = 0;
+            } // end else
+
             if (currentNumber > maxNumberOfOnes) {
                 maxNumberOfOnes = currentNumber;
-                currentNumber = 0;
             } // end if
 
         } // end for
+
         // Print output
         // System.out.print("Max number = ");
         System.out.println(maxNumberOfOnes);
