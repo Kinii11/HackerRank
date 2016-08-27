@@ -1,2 +1,2 @@
 # HackerRank
-This repository is intended to help complete HackerRank practice problems to improve my development skills.
+This repository is intended to help complete HackerRank practice problems to improve my development skills in Java.
