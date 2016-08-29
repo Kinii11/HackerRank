@@ -1,4 +1,4 @@
-/* HackerRank Day 15 - Matt Jass
+/* HackerRank Day 14 - Matt Jass
 
 Link: TODO add link here
 
